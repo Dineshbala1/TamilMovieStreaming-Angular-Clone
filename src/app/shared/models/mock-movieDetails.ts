@@ -1,0 +1,111 @@
+import { MovieDetails } from './movieDetails.model';
+
+export const movieDetailsMock: MovieDetails[] = [{
+	MovieName: 'Pattas',
+	MovieSummary: null,
+	RunningTime: null,
+	Quality: 'HD',
+	Country: null,
+	ReleaseYear: null,
+	WatchLink: 'http://www.tamildbox.best/watch/Pattas',
+	MovieThumb: 'http://www.tamildbox.best/images/listings/movie-15-01-2020-10-22-14-1.jpg'
+}, {
+	MovieName: 'Darbar',
+	MovieSummary: null,
+	RunningTime: null,
+	Quality: 'HD',
+	Country: null,
+	ReleaseYear: null,
+	WatchLink: 'http://www.tamildbox.best/watch/Darbar',
+	MovieThumb: 'http://www.tamildbox.best/images/listings/movie-09-01-2020-03-16-03-1.jpg'
+}, {
+	MovieName: 'Thambi',
+	MovieSummary: null,
+	RunningTime: null,
+	Quality: 'HD',
+	Country: null,
+	ReleaseYear: null,
+	WatchLink: 'http://www.tamildbox.best/watch/Thambi-201920120558',
+	MovieThumb: 'http://www.tamildbox.best/images/listings/movie-20-12-2019-05-43-58-1.jpg'
+}, {
+	MovieName: 'Hero',
+	MovieSummary: null,
+	RunningTime: null,
+	Quality: 'HD',
+	Country: null,
+	ReleaseYear: null,
+	WatchLink: 'http://www.tamildbox.best/watch/Hero',
+	MovieThumb: 'http://www.tamildbox.best/images/listings/movie-20-12-2019-10-14-53-1.jpg'
+}, {
+	MovieName: 'Market Raja MBBS',
+	MovieSummary: null,
+	RunningTime: null,
+	Quality: 'CAM',
+	Country: null,
+	ReleaseYear: null,
+	WatchLink: 'http://www.tamildbox.best/watch/Market-Raja-MBBS',
+	MovieThumb: 'http://www.tamildbox.best/images/listings/movie-29-11-2019-06-44-17-1.jpg'
+}, {
+	MovieName: 'Enai Noki Paayum Thota',
+	MovieSummary: null,
+	RunningTime: null,
+	Quality: 'CAM',
+	Country: null,
+	ReleaseYear: null,
+	WatchLink: 'http://www.tamildbox.best/watch/Enai-Noki-Paayum-Thota',
+	MovieThumb: 'http://www.tamildbox.best/images/listings/movie-29-11-2019-12-30-34-1.jpg'
+}, {
+	MovieName: 'Sangathamizhan',
+	MovieSummary: null,
+	RunningTime: null,
+	Quality: 'HD',
+	Country: null,
+	ReleaseYear: null,
+	WatchLink: 'http://www.tamildbox.best/watch/Sangathamizhan',
+	MovieThumb: 'http://www.tamildbox.best/images/listings/movie-16-11-2019-03-44-52-1.jpg'
+}, {
+	MovieName: 'Action',
+	MovieSummary: null,
+	RunningTime: null,
+	Quality: 'HD',
+	Country: null,
+	ReleaseYear: null,
+	WatchLink: 'http://www.tamildbox.best/watch/Action',
+	MovieThumb: 'http://www.tamildbox.best/images/listings/movie-15-11-2019-03-22-14-1.jpg'
+}, {
+	MovieName: 'Bigg Boss Kondattam',
+	MovieSummary: null,
+	RunningTime: null,
+	Quality: '',
+	Country: null,
+	ReleaseYear: null,
+	WatchLink: 'http://www.tamildbox.best/watch/Bigg-Boss-Kondattam',
+	MovieThumb: 'http://www.tamildbox.best/images/listings/movie-03-11-2019-03-03-09-1.JPG'
+}, {
+	MovieName: 'Kaithi',
+	MovieSummary: null,
+	RunningTime: null,
+	Quality: 'HD',
+	Country: null,
+	ReleaseYear: null,
+	WatchLink: 'http://www.tamildbox.best/watch/Kaithi',
+	MovieThumb: 'http://www.tamildbox.best/images/listings/movie-26-10-2019-12-06-30-1.jpg'
+}, {
+	MovieName: 'Bigil',
+	MovieSummary: null,
+	RunningTime: null,
+	Quality: 'HD',
+	Country: null,
+	ReleaseYear: null,
+	WatchLink: 'http://www.tamildbox.best/watch/Bigil',
+	MovieThumb: 'http://www.tamildbox.best/images/listings/movie-25-10-2019-11-44-34-1.jpg'
+}, {
+	MovieName: 'Kaaviyyan',
+	MovieSummary: null,
+	RunningTime: null,
+	Quality: 'HD',
+	Country: null,
+	ReleaseYear: null,
+	WatchLink: 'http://www.tamildbox.best/watch/Kaaviyyan',
+	MovieThumb: 'http://www.tamildbox.best/images/listings/movie-20-10-2019-11-20-37-1.jpg'
+}];

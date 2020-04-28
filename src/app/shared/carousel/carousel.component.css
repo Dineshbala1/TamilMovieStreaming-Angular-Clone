@@ -1,0 +1,42 @@
+.tags{
+    border-radius: 3px;
+    padding: 4px;
+    margin-right: 4px;
+    font-size: 12px;
+    text-shadow: black;
+    background-color:rgba(65, 67, 80, 0.80);
+    color: white;
+}
+
+
+.overlay{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    opacity: 30%;
+    background-color: black;
+    z-index: 999;
+}
+
+.overlay:hover{
+    opacity: 60%;
+}
+
+.carousel-item {
+    display: flex !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.2s ease-in-out, visibility 1.2s;
+    z-index: -1;
+    position: absolute;
+}
+
+.carousel-item.active{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}

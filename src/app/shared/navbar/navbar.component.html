@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+    <div class="container-fluid content">
+        <a class="navbar-brand mr-5" href="#">Tamil movies</a>
+        <button class="navbar-toggler hidden-sm-up" type="button" (mouseover)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+          <ul class="navbar-nav flex-wrap">
+            <!-- <li class="nav-item mr-4" ngbDropdown>
+              <a class="nav-link text-white" id="id01" href="#" ngbDropdownToggle>Genre</a>
+              <div class="dropdown-menu mt-3" aria-labelledby="id01" ngbDropdownMenu>
+                <a class="dropdown-item" href="#"></a>
+                <a class="dropdown-item" href="#">TS</a>
+                <a class="dropdown-item" href="#">JS</a>
+              </div>
+            </li> -->
+            <li class="nav-item mt-auto mb-auto mr-4" *ngFor="let item of navigationMenuItems">
+              <a [href]="item.NavigationData" class="text-white text-decoration-none">{{item.PresenterName}}</a>
+            </li>
+          </ul>
+          
+        </div>
+    </div>
+    
+  </nav>

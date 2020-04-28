@@ -1,0 +1,89 @@
+<div class="container main">
+  <!-- Main component for a primary marketing message or call to action -->
+  <app-carousel class="container-fluid content"></app-carousel>
+
+  <div p-4 class="container-fluid content">
+    <p class="h3 text-dark float-left">Suggestions</p>
+    <div style="float: right;">
+      <ul class="nav nav-pills">
+        <li><a class="nav-item accordion ml-1 mr-1">New Releases</a></li>
+        <li><a class="ml-1 mr-1">Featured</a></li>
+        <li><a class="ml-1 mr-1">Most viewed</a></li>
+        <li><a class="ml-1 mr-1">Most Rated</a></li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="row">
+      <div
+        *ngFor="let movie of movieDetails"
+        class="col-lg-2 col-md-3 col-sm-1 p-lg-0"
+      >
+        <div class="card h-100 m-2 border-0">
+          <img
+            src="{{ movie.MovieThumb }}"
+            class="card-img h-75 border-bottom border-right"
+          />
+          <div class="card-img-overlay p-0">
+            <span class="overlay-label">{{ movie.Quality }}</span>
+          </div>
+          <div class="card-footer bg-transparent">
+            <p class="text-center">{{ movie.MovieName }}</p>
+          </div>
+          <div class="overlay-div">
+            <div class="text-center">
+              <a class="text-decoration-none" style="top: 35%; left: 35%; position: absolute;" href="{{movie.WatchLink}}">
+                <span class="fa fa-play mr-2 spanCircle"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+
+  <!-- <div p-4 class="container-fluid content">
+    <p class="h3 text-dark float-left">Latest Movies</p>
+    <div class="clearfix"></div>
+    <div class="row">
+      <div
+        *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]"
+        class="col-lg-2 col-md-3 col-sm-1 p-lg-0"
+      >
+        <div class="card m-2">
+          <img
+            src="https://www.tamildbox.best/images/listings/movie-15-01-2020-10-22-14-1.jpg"
+            class="card-img"
+          />
+          <div class="card-img-overlay p-0">
+            <span
+              style="
+                padding-left: 5px;
+                padding-right: 5px;
+                color: white;
+                background-color: greenyellow;
+                border-radius: 4px;
+                border-spacing: 2px;
+              "
+              >HD</span
+            >
+            <h3 class="text-center">{{ item }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <br />
+
+  <sxm-video> </sxm-video>
+
+  <!-- <div>
+  <video controls preload="auto">
+    <source src="https://cdn3.chromecast.video/hls/r42lrth5pxczrmasbrqc27zozc6j7pzggwuudwrtj,7h73prqmgk6lnftpt2q,va73prqmgk24nmk6teq,plpzprqmgkqcjrdp2dq,.urlset/master.m3u8?hash=1234" type="application/x-mpegURL"></video>
+</div> -->
+
+  <br />
+</div>
