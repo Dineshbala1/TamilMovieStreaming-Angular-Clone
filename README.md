@@ -1,4 +1,4 @@
 # TamilMovies-Angular Clone
- Cloning tamil movie streaming website using angular
+ Cloned tamil movie streaming website with angular
  
  https://tamilmoviestreaming.azurewebsites.net/
