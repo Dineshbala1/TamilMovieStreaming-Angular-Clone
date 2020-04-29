@@ -7,6 +7,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
 import { VideoComponent } from './shared/video/video.component';
+import { ItemsControlComponent } from './shared/items-control/items-control.component';
 declare const videojs: any;
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ declare const videojs: any;
     FooterComponent,
     HomeComponent,
     CarouselComponent,
-    VideoComponent
+    VideoComponent,
+    ItemsControlComponent
   ],
   imports: [
     BrowserModule,

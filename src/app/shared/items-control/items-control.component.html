@@ -1,0 +1,25 @@
+<div class="row">
+    <div
+      *ngFor="let movie of movieDetails"
+      class="col-lg-2 col-md-3 col-sm-1 p-lg-0">
+      <div class="card h-100 m-2 border-0">
+        <img
+          src="{{ movie.MovieThumb }}"
+          class="card-img h-75 border-bottom border-right"
+        />
+        <div class="card-img-overlay p-0">
+          <span class="overlay-label">{{ movie.Quality }}</span>
+        </div>
+        <div class="card-footer bg-transparent">
+          <p class="text-center">{{ movie.MovieName }}</p>
+        </div>
+        <div class="overlay-div">
+          <div class="text-center">
+            <a class="text-decoration-none" style="top: 35%; left: 35%; position: absolute;" href="{{movie.WatchLink}}">
+              <span class="fa fa-play mr-2 spanCircle"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

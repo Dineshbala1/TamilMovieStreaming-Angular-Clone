@@ -15,4 +15,8 @@ export class CarouselComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  checkLogs(): void {
+    console.log('Dispatched');
+  }
 }

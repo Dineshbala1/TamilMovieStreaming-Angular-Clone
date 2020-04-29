@@ -1,42 +1,62 @@
-.tags{
-    border-radius: 3px;
-    padding: 4px;
-    margin-right: 4px;
-    font-size: 12px;
-    text-shadow: black;
-    background-color:rgba(65, 67, 80, 0.80);
-    color: white;
+.carousel-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
-
-.overlay{
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    position: absolute;
-    padding: 0px;
-    margin: 0px;
-    opacity: 30%;
-    background-color: black;
-    z-index: 999;
+.carousel-caption {
+  text-align: start;
+  top: 50px;
+  left: 50px;
+  z-index: 1000;
 }
 
-.overlay:hover{
-    opacity: 60%;
+h3 {
+  text-shadow: black;
+}
+
+.tags {
+  border-radius: 3px;
+  padding: 4px;
+  margin-right: 4px;
+  font-size: 12px;
+  text-shadow: black;
+  background-color: rgba(65, 67, 80, 0.8);
+  color: white;
+}
+
+.btnSet:hover .overlay {
+  opacity: 60%;
+}
+
+.overlay {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1001;
 }
 
 .carousel-item {
-    display: flex !important;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1.2s ease-in-out, visibility 1.2s;
-    z-index: -1;
-    position: absolute;
+  display: flex !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.2s ease-in-out, visibility 1.2s;
+  z-index: -1;
+  position: absolute;
 }
 
-.carousel-item.active{
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
+.carousel-item.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
 }

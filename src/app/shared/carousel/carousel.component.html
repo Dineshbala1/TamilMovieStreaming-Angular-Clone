@@ -2,42 +2,38 @@
   <ng-template
     ngbSlide
     *ngFor="let carouselItem of carouselItems"
-    style="border-radius: 10%;"
   >
     <div class="item">
       <img
         [src]="carouselItem.MovieBannerUrl"
-        class="img-fluid"
+        class="img-fluid carousel-image"
         alt="Random first slide"
-        style="width: 100%; height: 400px; object-fit: cover;"
       />
-      <div class="overlay"></div>
-      <div
-        class="carousel-caption"
-        style="
-          text-align: start;
-          top: 50px;
-          left: 50px;
-          z-index: 1000;
-          pointer-events: none;
-        "
-      >
-        <h3 style="text-shadow: black;">
-          {{ carouselItem.MovieDetail.MovieName }}
-        </h3>
-        <p>
-          <span class="tags">{{ carouselItem.MovieDetail.RunningTime }}</span>
-          <span class="tags">{{ carouselItem.MovieDetail.Quality }}</span>
-          <span class="tags">{{ carouselItem.MovieDetail.Country }}</span>
-          <span class="tags">{{ carouselItem.MovieDetail.ReleaseYear }}</span>
-        </p>
-        <p class="text-white w-sm-100 w-50" style="max-lines: 3;">
-          {{ carouselItem.MovieDetail.MovieSummary }}
-        </p>
-        <div
-          class="btn btn-primary"
-          style="cursor: pointer; pointer-events: all;">
-          <a href="www.tamildbox.best/watch/{{carouselItem.MovieDetail.MovieName}}" class="text-white text-decoration-none"><span class="fa fa-play"></span> Watch now</a>
+
+      <div class="overlay">
+        <div class="carousel-caption">
+          <h3>{{ carouselItem.MovieDetail.MovieName }}</h3>
+          <p>
+            <span class="tags">{{ carouselItem.MovieDetail.RunningTime }}</span>
+            <span class="tags">{{ carouselItem.MovieDetail.Quality }}</span>
+            <span class="tags">{{ carouselItem.MovieDetail.Country }}</span>
+            <span class="tags">{{ carouselItem.MovieDetail.ReleaseYear }}</span>
+          </p>
+
+          <p class="text-white w-50">
+            {{ carouselItem.MovieDetail.MovieSummary }}
+          </p>
+
+          <div class="btn btn-primary btnSet">
+            <a
+              class="text-white text-decoration-none"
+              href="www.tamildbox.best/watch/{{
+                carouselItem.MovieDetail.MovieName
+              }}"
+            >
+              <span class="fa fa-play"></span> Watch now
+            </a>
+          </div>
         </div>
       </div>
     </div>

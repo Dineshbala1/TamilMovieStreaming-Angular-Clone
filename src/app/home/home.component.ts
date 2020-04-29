@@ -9,10 +9,8 @@ import { movieDetailsMock } from '../shared/models/mock-movieDetails';
 
 export class HomeComponent implements OnInit {
 
-  movieDetails;
 
   constructor() {
-    this.movieDetails = movieDetailsMock;
   }
 
   ngOnInit() {
