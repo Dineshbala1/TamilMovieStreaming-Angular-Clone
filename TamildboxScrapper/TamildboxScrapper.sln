@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TamildboxScrapper", "TamildboxScrapper.csproj", "{3C4E9779-D764-46A8-ACE8-58C1AD59FAFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C4E9779-D764-46A8-ACE8-58C1AD59FAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4E9779-D764-46A8-ACE8-58C1AD59FAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4E9779-D764-46A8-ACE8-58C1AD59FAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4E9779-D764-46A8-ACE8-58C1AD59FAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA79BCE6-2B2F-46AC-9356-AD71039E61FD}
+	EndGlobalSection
+EndGlobal
